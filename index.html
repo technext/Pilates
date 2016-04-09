@@ -76,18 +76,19 @@
                             <b class="mb10">The Pilates Method of Body Conditioning develops the body uniformly, invigorates the mind and elevates the spirit.</b>
                         </div>
                         <div class="col-md-6 text-right">
-                            <form action="contact-form.php" id="contactForm" class="form-inline" method="post" name="contactform" role="form">
+                            <form class="form-inline subscribe-form" id="subscription-form" role="form">
                                 <div class="form-group">
-                                    <label class="sr-only" for="name">Full Name</label>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label class="sr-only" for="subscriber-name">Full Name</label>
+                                    <input name="name" type="text" class="form-control" id="subscriber-name" placeholder="Your Name">
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only" for="name">Email address</label>
-                                    <input name="email" type="email" class="form-control" id="name" placeholder="Your Email">
+                                    <label class="sr-only" for="subscriber-email">Email address</label>
+                                    <input name="email" type="email" class="form-control" id="subscriber-email" placeholder="Your Email">
                                 </div>
-                                <input id="cfsubmit" type="submit" class="btn btn-primary" value="Get it!">
-                                <div id="contactFormResponse"></div>
+                                <input id="subscribe-button" type="submit" class="btn btn-primary" value="Get it!">
                             </form>
+                            <!-- SUCCESS OR ERROR MESSAGES -->
+                            <div id="subscription-response"></div>
                         </div>
                     </div>
                 </div><!-- container -->
@@ -305,7 +306,7 @@
     <script src="js/jquery.actual.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/contact.js"></script>
+
     <script src="js/main.js"></script>
 
 </body>
