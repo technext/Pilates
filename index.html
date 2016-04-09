@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Pilates</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
@@ -76,16 +76,17 @@
                             <b class="mb10">The Pilates Method of Body Conditioning develops the body uniformly, invigorates the mind and elevates the spirit.</b>
                         </div>
                         <div class="col-md-6 text-right">
-                            <form class="form-inline" role="form">
+                            <form action="contact-form.php" id="contactForm" class="form-inline" method="post" name="contactform" role="form">
                                 <div class="form-group">
                                     <label class="sr-only" for="name">Full Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="name">Email address</label>
-                                    <input type="email" class="form-control" id="name" placeholder="Your Email">
+                                    <input name="email" type="email" class="form-control" id="name" placeholder="Your Email">
                                 </div>
-                                <input type="submit" class="btn btn-primary" value="Get it!">
+                                <input id="cfsubmit" type="submit" class="btn btn-primary" value="Get it!">
+                                <div id="contactFormResponse"></div>
                             </form>
                         </div>
                     </div>
@@ -284,12 +285,12 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="social-bar">
-                        <a href="#" class="ion-social-twitter tooltipped" title=""></a>
-                        <a href="#" class="ion-social-youtube tooltipped" title=""></a>
-                        <a href="#" class="ion-social-vimeo tooltipped" title=""></a>
-                        <a href="#" class="ion-social-facebook tooltipped" title=""></a>
-                        <a href="#" class="ion-social-pinterest tooltipped" title=""></a>
-                        <a href="#" class="ion-social-googleplus tooltipped" title=""></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-twitter tooltipped" title="Twitter"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-youtube tooltipped" title="Youtube"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-vimeo tooltipped" title="Vimeo"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-facebook tooltipped" title="Facebook"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-pinterest tooltipped" title="Pinterest"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-googleplus tooltipped" title="Google-Plus"></a>
                     </div>
                 </div>
             </div>
@@ -304,7 +305,7 @@
     <script src="js/jquery.actual.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-
+    <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
 
 </body>
